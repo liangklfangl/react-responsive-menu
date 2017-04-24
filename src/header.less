@@ -1,0 +1,113 @@
+.header{
+ background: #fff;
+ height: 80px;
+ margin-bottom: 24px;
+ padding:0 48px;
+ width: 100%;
+ border:1px solid pink;
+}
+body{
+  font-size: 14px;
+}
+.corp{
+    height: 80px;
+    line-height: 80px;
+    float: right;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #108ee9;
+}
+/*Our Popover component will show , width:300px , and width of ul#nav li set 100%*/
+@media only screen and (min-width: 0px) and (max-width: 1080px) {
+   .popover-icon {
+    display: block!important;
+   }
+    a#logo {
+    width: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    float: none;
+    display: block;
+   }
+   .popover-icon:before {
+    content: "";
+    display: block;
+    border-radius: 2px;
+    width: 16px;
+    height: 2px;
+    background: #777;
+    box-shadow: 0 6px 0 0 #777, 0 12px 0 0 #777;
+    position: absolute;
+   }
+  #search-box {
+    display: none;
+  }
+  .popover-menu {
+    width: 300px;
+    button.lang {
+      margin: 16px auto;
+      float: none;
+    }
+    .ant-popover-inner {
+      overflow: hidden;
+      text-align: center;
+      &-content {
+        padding: 0;
+      }
+    }
+  }
+  ul#nav,
+  ul#nav li {
+    width: 100%;
+    font-size: 14px;
+  }
+  ul#nav li{
+    line-height: 60px;
+    height: 60px;
+    text-align: center;
+    padding: 0 !important;
+    border: 0;
+    a {
+      color: #333;
+    }
+  }
+}
+.popover-icon{
+  display: none;
+  position: absolute;
+  right: 30px;
+  top: 32px;
+  z-index: 1;
+  width: 16px;
+  height: 22px;
+   cursor: pointer;
+}
+.lang{
+  float:right;
+  margin-top:24px;
+}
+#logo{
+  line-height: 80px;
+  float:left;
+  height: 80px;
+}
+.select-content{
+  width:200px;
+}
+#banner{
+  width: 40px;
+  height: 80px;
+}
+#search-box{
+  float: left;
+  width:200px;
+  height:22px;
+  margin:29px ;
+  line-height: 22px auto 0;
+  border-left:1px solid #ebedee;
+  padding-left: 30px;
+}
+.menu{
+  float:right;
+  line-height: 76px;
+}
